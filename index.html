@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Review Carousel</title>
+</head>
+<body>
+    <div class="h-[100vh] w-[100vw] flex flex-col justify-center items-center gap-4">
+        <h1 class="text-4xl text-[#06065c]">Our Reviews</h1>
+        <div class="w-[90%]  rounded-lg border-[#ccc] shadow-lg bg-purple flex flex-col justify-center items-center gap-1 py-8 md:w-[50%] sm:w-[90%]">
+            <img id="personImg" class="rounded-full w-[120px]" src="./image1.jpeg">
+            <p id="personName" class="font-bold tracking-wider"></p>
+            <p id="personDesignation" class="text-[#2fc6f7]"></p>
+            <p id="personDescription" class="tracking-wide text-center text-[grey] w-[90%]"></p>
+            <div class="flex gap-4">
+                <i onclick="changePersion(-1)" class="fa fa-angle-left text-[#2fc6f7] text-2xl cursor-pointer"></i>
+                <i onclick="changePersion(1)" class="fa fa-angle-right text-[#2fc6f7] text-2xl cursor-pointer"></i>
+            </div>
+            <button class="border-2 mt-1 px-2 text-[#2fc6f7] border-[#2fc6f7]">Surprise Me</button>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+</html>
